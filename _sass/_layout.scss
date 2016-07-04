@@ -2,8 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    background: $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -181,6 +180,7 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        border-bottom: 1px solid gray;
     }
 }
 
@@ -238,5 +238,10 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+    .post-list  {
+      li {
+        border-bottom: 1px solid black;
+      }
     }
 }
