@@ -17,7 +17,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-# Build settings
+# Build settingsNNq6
 markdown: kramdown
 sass:
   sass_dir: _sass

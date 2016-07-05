@@ -1,15 +1,23 @@
 /**
+  * General
+  */
+  body {
+    background-color: #f2f2f2;
+  }
+
+/**
  * Site header
  */
 .site-header {
-    background: $grey-color-light;
+    background: gray;
     min-height: 56px;
-
+    box-shadow: 0px 0px 20px gray;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
+  color: white;
     font-size: 26px;
     font-weight: 300;
     line-height: 56px;
@@ -19,7 +27,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
     }
 }
 
@@ -32,7 +40,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: white;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -99,6 +107,8 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: white;
+    height: 100%;
 }
 
 .footer-heading {
@@ -168,10 +178,18 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
+    .wrapper {
+      border: 1px solid lightgray;
+      box-shadow: 0px 8px 20px gray;
+      background-color: white;
+      padding-top: 15px;
+      min-height: 73vh;
+      .home {
+        h1.page-heading {
+          font-size: 28px;
+        }
+      }
+    }
 }
 
 .post-list {
@@ -181,6 +199,9 @@
     > li {
         margin-bottom: $spacing-unit;
         border-bottom: 1px solid gray;
+    }
+    h2 {
+      margin-bottom: 5px;
     }
 }
 
@@ -192,6 +213,11 @@
 .post-link {
     display: block;
     font-size: 24px;
+    button {
+      height: 25px;
+      width: 100px;
+      margin-bottom: 10px;
+    }
 }
 
 
